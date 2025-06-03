@@ -2,6 +2,15 @@
     <head>
         <title> МакДональдз Замовлення </title>
         <link rel="stylesheet" href="style.css">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNHYGTFN7J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HNHYGTFN7J');
+</script>
     </head>
         <body>
 <header>
@@ -22,14 +31,18 @@
             <div class = 'catalog_order'>
                 <div class = "placeholder_order_text">Ви ще не створили своє замовлення.</div>
                 <div class = "submit_form">
-                    <input class='submit-input' type='country' placeholder="Країна">
                     <p class='submit-input-label'>Країна</p>
-                    <input class='submit-input' type='city' placeholder='Місто'>
+                    <input class='submit-input' type='country' placeholder="Країна">
+                    
                     <p class='submit-input-label'>Місто</p>
-                    <input class='submit-input' type='address' placeholder='Адреса'>
+                    <input class='submit-input' type='city' placeholder='Місто'>
+                    
                     <p class='submit-input-label'>Адреса</p>
-                    <input class='submit-input' type='phone' placeholder='Номер телефону'>
+                    <input class='submit-input' type='address' placeholder='Адреса'>
+                    
                     <p class='submit-input-label'>Номер телефону</p>
+                    <input class='submit-input' type='phone' placeholder='Номер телефону'>
+                    
                 </div>
             </div>
         </div>

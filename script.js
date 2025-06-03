@@ -19,6 +19,17 @@ let menu_class_drinks = document.querySelector(".menu_class_drinks")
 let desserts = document.querySelectorAll(".dessert")
 let menu_class_desserts = document.querySelector(".menu_class_desserts")
 
+let binbtn = document.querySelectorAll(".binbtn")
+
+let products = [
+    {
+        id: 1,
+        name: "Тейсті Джуніор",
+        price: 110,
+        image: "https://s7d1.scene7.com/is/image/mcdonalds/Big%20Tasty%20Junior:nutrition-calculator-tile"
+    }
+]
+
 menu_class_fullmenu.addEventListener("click", function(){
     for(let i = 0; i<menu_option.length; i++){
         menu_option[i].style.display = "flex"
@@ -72,3 +83,11 @@ menu_class_desserts.addEventListener("click", function(){
         desserts[i].style.display = "flex"
     }
 })
+
+
+
+for(let i = 0; i<menu_option.length; i++){
+    binbtn[i].addEventListener("click", function(){
+        
+    })
+}
