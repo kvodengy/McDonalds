@@ -341,3 +341,23 @@ footer{
     height: 100%;
     width: 50%;
 }
+
+.binbtn{
+    width: 5%;
+    height: 5%;
+}
+
+
+
+
+
+
+/*       ORDER            */
+
+
+
+
+
+.order_header{
+    border-bottom: 2px solid #FFF;
+}

@@ -20,12 +20,13 @@ let desserts = document.querySelectorAll(".dessert")
 let menu_class_desserts = document.querySelector(".menu_class_desserts")
 
 let binbtn = document.querySelectorAll(".binbtn")
+let product_name = document.querySelectorAll(".product_name")
 
 let products = [
     {
         id: 1,
         name: "Тейсті Джуніор",
-        price: 110,
+        price: 120,
         image: "https://s7d1.scene7.com/is/image/mcdonalds/Big%20Tasty%20Junior:nutrition-calculator-tile"
     }
 ]
@@ -84,10 +85,19 @@ menu_class_desserts.addEventListener("click", function(){
     }
 })
 
-
-
-for(let i = 0; i<menu_option.length; i++){
+function addToCart(){
+    for(let i = 0; i<binbtn.length; i++){
     binbtn[i].addEventListener("click", function(){
-        
+        let name = product_name[i].textContent;
+        let id = products.find(i => i.name === name).id;
+        let image = products.find(i =>i.name === name).image;
+        let price = products.find(i => i.name === name).price;
+        let container = document.querySelector(".catalog_order");
+        let el = document.createElement('div');
+        el.className = 'menu_option';
+        el.innerHTML = `<img class = "option_img" src = "${i.image}"><p><span class = "product_name">${i.name}</span> ${i.price} грн</p><img class = "binbtn" src = "985742.png">`;
     })
 }
+}
+
+addToCart()
