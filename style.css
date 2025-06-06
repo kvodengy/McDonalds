@@ -372,6 +372,10 @@ footer{
     padding-left: 10px;
 }
 
+.menu_class:hover{
+    background-color: #cbcbcb;
+}
+
 .menu_img{
     width: 35%;
     height: 10%;
